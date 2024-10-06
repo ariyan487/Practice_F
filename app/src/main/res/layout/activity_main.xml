@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/adContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adContainerView"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="PREVIEW"
+                        android:background="@drawable/shape"/>
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="NEXT"
+                        android:background="@drawable/shape"/>
+
+                </LinearLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                     android:id="@+id/lanim"
+                     android:layout_weight="1"
+                     android:layout_gravity="center"
+                     android:layout_width="400dp"
+                     android:layout_height="300dp"
+                     app:lottie_url="https://lottie.host/cd1be01c-dda1-493c-880a-1690ff0c900d/OszDusBNRc.json"
+                     app:lottie_autoPlay="true"
+                     app:lottie_loop="true"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="A-->> PREVIEW"
+                        android:background="@drawable/shape"/>
+                    <Button
+                        android:id="@+id/btn33"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="A-->> NEXT"
+                        android:background="@drawable/shape"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn11"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="PREVIEW"
+                        android:background="@drawable/shape"/>
+                    <Button
+                        android:id="@+id/btn22"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="NEXT"
+                        android:background="@drawable/shape"/>
+
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lanim1"
+                    android:layout_weight="1"
+                    app:lottie_url="https://lottie.host/cd1be01c-dda1-493c-880a-1690ff0c900d/OszDusBNRc.json"
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="A-->> PREVIEW"
+                        android:background="@drawable/shape"/>
+                    <Button
+                        android:id="@+id/btn44"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="A-->> NEXT"
+                        android:background="@drawable/shape"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
